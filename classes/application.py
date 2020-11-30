@@ -24,7 +24,7 @@ class Application:
         
     def load_widgets(self):
         # Create a notebook that will manage the tabs
-        self.notebook = ttk.Notebook(self.master)
+        self.notebook = ttk.Notebook(self.master, height=900, width=900)
         self.notebook.pack(pady=3)
         
         self.frm_train_tab = Frame(self.notebook, width=900, height=420, bg='yellow')
